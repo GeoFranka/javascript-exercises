@@ -1,9 +1,9 @@
-const isObject = (smth) => typeof smth === 'object' && smth !== null;
+const isObject = (smthng) => typeof smthng === 'object' && smthng !== null;
 
 const totalIntegers = function(arrayOrObject) {
 
     if(!isObject(arrayOrObject)){
-        return undefined;
+        return;
     }
 
     return Object.values(arrayOrObject).reduce((prev, current)=>{
